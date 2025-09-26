@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.card {
+  @include card-style; // vient de _mixins.scss
+
+  // état non surélevé si on veut des cards "plates"
+  &.card--elevated {
+    box-shadow: $shadow-md;
+
+    &:hover {
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  // titres et sous-titres harmonisés avec les vars
+  &__title {
+    font-family: $font-title;
+    font-size: $font-size-h3;
+    margin-bottom: $spacing-xs;
+    color: $text-color;
+  }
+
+  &__subtitle {
+    color: $text-muted;
+    margin-bottom: $spacing-sm;
+    font-size: $font-size-small;
+  }
+
+  /***
+  &__content {
+    // rien de spécial, mais facile à surcharger
+  }
+  ***/
+}
+
+/* Exemples d’extensions utiles (optionnel) */
+.card--clickable {
+  cursor: pointer;
+}

@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/main.scss';
+import Card from './components/Card/Card';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <main className="container" style={{ paddingTop: '48px', paddingBottom: '48px' }}>
+      <section style={{ marginBottom: '32px' }}>
+        <h1>Mon Portfolio</h1>
+        <p className="text-muted">
+          Bienvenue — voici une démo de <code>&lt;Card /&gt;</code> avec les variables et mixins.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      </section>
 
-export default App
+      <section className="grid" style={{
+        display: 'grid',
+        gap: '24px',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))'
+      }}>
+        <Card title="Projet A" subtitle="React • Sass">
+          <p>
+            Un projet front moderne. <a href="#">Voir le repo</a>.
+          </p>
+        </Card>
+
+        <Card title="Projet B" subtitle="Node • API" elevated={false}>
+          <p>
+            Backend minimal pour formulaire de contact.
+          </p>
+        </Card>
+
+        <Card title="À propos" subtitle="Qui suis-je ?">
+          <p>
+            Développeur front, passionné par l’UX et les interfaces propres ✨
+          </p>
+        </Card>
+      </section>
+
+      <section style={{ marginTop: '32px' }}>
+        <button className="btn-primary">Me contacter</button>
+      </section>
+    </main>
+  );
+}

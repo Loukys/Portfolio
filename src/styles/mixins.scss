@@ -1,0 +1,47 @@
+// =============================
+// Mixins réutilisables Portfolio
+// =============================
+
+// 1. Card Style
+@mixin card-style {
+  background: $background-alt;
+  color: $text-color;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-md;
+  padding: $spacing-md;
+  transition: $transition-fast;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+  }
+}
+
+// 2. Bouton Style
+@mixin button-style($bg-color: $color-primary, $text: #fff) {
+  background-color: $bg-color;
+  color: $text;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  font-size: $font-size-base;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// 3. Flex Center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 4. Responsive Container
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}

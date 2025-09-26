@@ -1,0 +1,72 @@
+// =============================
+// Styles globaux Portfolio
+// =============================
+
+@import 'variables';
+
+// 1. Reset de base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 2. Styles de body
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+// 3. Titres globaux
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  font-weight: 700;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+
+// 4. Liens
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-fast;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+  }
+}
+
+// 5. Classes utilitaires
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+/* Bouton primaire réutilisable */
+.btn-primary {
+  @include button-style($color-primary, #fff); // mixin depuis _mixins.scss
+}
+
+/* Grille utilitaire (ex. dans App.jsx) */
+.grid {
+  display: grid;
+  gap: $spacing-md;
+}
