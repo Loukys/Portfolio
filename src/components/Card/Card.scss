@@ -1,5 +1,5 @@
-@import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 .card {
   @include card-style; // vient de _mixins.scss
@@ -13,7 +13,23 @@
     }
   }
 
-  // titres et sous-titres harmonisés avec les vars
+  // image au-dessus du contenu
+  &__image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: $border-radius-md $border-radius-md 0 0;
+    margin-bottom: $spacing-sm;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  // titres et sous-titres
   &__title {
     font-family: $font-title;
     font-size: $font-size-h3;
@@ -26,15 +42,4 @@
     margin-bottom: $spacing-sm;
     font-size: $font-size-small;
   }
-
-  /***
-  &__content {
-    // rien de spécial, mais facile à surcharger
-  }
-  ***/
-}
-
-/* Exemples d’extensions utiles (optionnel) */
-.card--clickable {
-  cursor: pointer;
 }

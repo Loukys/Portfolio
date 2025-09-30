@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.section {
+  padding: $spacing-xl 0;
+
+  &--alt {
+    background: $background-alt;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    margin-bottom: $spacing-lg;
+    text-align: left;
+
+    .section__title {
+      font-family: $font-title;
+      font-size: $font-size-h2;
+      margin-bottom: $spacing-xs;
+      color: $text-color;
+    }
+
+    .section__subtitle {
+      color: $text-muted;
+      font-size: $font-size-large;
+    }
+  }
+
+  &__content {
+    display: block;
+  }
+}
