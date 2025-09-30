@@ -1,0 +1,23 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.skill-card {
+  @include card-style;
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  font-weight: 500;
+  font-size: $font-size-base;
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    font-size: 28px;     // contrôle la taille
+    color: $text-color;  // héritera de cette couleur
+  }
+
+  &__name {
+    color: $text-color;
+  }
+}

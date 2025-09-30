@@ -1,8 +1,8 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 .section {
-  padding: $spacing-xl 0;
+  padding: $spacing-2xl 0;
 
   &--alt {
     background: $background-alt;

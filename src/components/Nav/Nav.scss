@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.nav {
+  &__menu {
+    display: flex;
+    gap: $spacing-lg;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color $transition-fast;
+
+      &.active {
+        color: $color-primary;
+      }
+
+      &:hover {
+        color: darken($color-primary, 10%);
+      }
+    }
+  }
+}

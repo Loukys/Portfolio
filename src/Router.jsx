@@ -6,7 +6,7 @@ import CV from './pages/CV/CV.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 
 
-export default function AppRouter() {
+export default function Router() {
   return (
     <Routes>
         <Route path="/" element={<Home />} />

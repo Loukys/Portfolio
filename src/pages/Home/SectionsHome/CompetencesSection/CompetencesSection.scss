@@ -1,0 +1,29 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+// Ajustement du style pour la section Mes Compétences
+.competences-list {
+  display: grid;
+  gap: $spacing-sm;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    @include card-style;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.competences-grid {
+  margin-bottom: $spacing-lg;
+  display: grid;
+  gap: $spacing-sm;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  h3 {
+    grid-column: 1 / -1; // le titre prend toute la ligne
+    margin-bottom: $spacing-sm;
+  }
+}

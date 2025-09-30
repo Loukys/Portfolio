@@ -19,6 +19,7 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
+  padding-top: 80px;
 }
 
 // 3. Titres globaux
@@ -58,29 +59,6 @@ a {
 
 .text-muted {
   color: $text-muted;
-}
-
-// 6. Photo de profile
-.photo-profile-header {
-  width: 70px;               // taille de la photo 
-  height: 70px;              // taille de la photo
-  border-radius: 50%;        // rend la photo parfaitement ronde
-  object-fit: cover;         // ajuste l’image sans déformation
-  border: 3px solid $color-primary; // contour avec ta couleur principale
-  box-shadow: $shadow-md;    // petite ombre élégante
-  display: block;
-  margin: 0 auto;            // centre horizontalement
-}
-
-.photo-profile-home {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;         
-  border: 3px solid $color-primary; 
-  box-shadow: $shadow-md;    
-  display: block;
-  margin: 0 auto;            
 }
 
 /* Bouton primaire réutilisable */

@@ -1,0 +1,36 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.parcours-section__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.parcours-card {
+  @include card-style;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; // rond parfait
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: $font-title;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $text-color;
+  background-color: $background-color;
+
+  transition: transform $transition-fast, box-shadow $transition-fast;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $shadow-lg;
+    color: $color-primary;
+  }
+
+  text-decoration: none; // supprime le soulignement du lien
+}

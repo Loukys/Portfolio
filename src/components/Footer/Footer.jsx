@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Logo / Nom */}
         <div className="footer__brand">
           <h2>Guillaume LOUAIL</h2>
-          <p>Développeur Web • Frontend</p>
+          <p>Développeur Web • Ingénieur MQSE</p>
         </div>
 
         {/* Liens internes */}

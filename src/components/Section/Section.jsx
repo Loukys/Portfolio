@@ -5,8 +5,8 @@ export default function Section({
   title,
   subtitle,
   children,
-  variant = 'default', // 'default' | 'alt' (fond alternatif)
-  container = true,   // si false: pleine largeur
+  variant = 'default',
+  container = true, 
   as: Tag = 'section',
 }) {
   const labelId = id ? `${id}-title` : undefined;

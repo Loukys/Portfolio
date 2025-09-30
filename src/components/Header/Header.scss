@@ -1,43 +1,56 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 .header {
-  background-color: $background-alt;
-  padding: $spacing-md 0;
-  border-bottom: 1px solid $border-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-  &__nav {
+  background-color: $background-alt;
+  border-bottom: 1px solid $border-color;
+  box-shadow: $shadow-sm;
+
+  &__container {
     @include container;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: $spacing-md 0;
   }
 
   &__logo {
     font-family: $font-title;
     font-size: $font-size-h3;
+    font-weight: 700;
     color: $color-primary;
     margin: 0;
+    text-decoration: none;
   }
 
-  &__menu {
+  &__profile {
     display: flex;
-    gap: $spacing-lg;
-    list-style: none;
+    align-items: center;
+    gap: $spacing-md;
+  }
 
-    a {
-      color: $text-color;
-      text-decoration: none;
-      font-weight: 500;
-      transition: $transition-fast;
+  &__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $color-primary;
+  }
 
-      &.active {
-        color: $color-primary;
-      }
+  &__icon {
+    margin-top: 6px;
+    font-size: 1.5rem;
+    color: $color-primary;
+    transition: color $transition-fast;
 
-      &:hover {
-        color: darken($color-primary, 10%);
-      }
+    &:hover {
+      color: $color-secondary;
     }
   }
 }

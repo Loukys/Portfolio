@@ -1,4 +1,5 @@
-import AppRouter from './Router';
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+import Router from './Router';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
@@ -6,7 +7,8 @@ export default function App() {
   return (
     <div className="app">
       <Header />
-      <AppRouter />
+      <ScrollToTop />
+      <Router />
       <Footer />
     </div>
   );

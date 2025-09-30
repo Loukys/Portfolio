@@ -1,32 +1,45 @@
-import { NavLink } from 'react-router-dom';
 import './Header.scss';
-
-import Photo_profile from '../../images/Photo_profile.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Nav from '@/components/Nav/Nav.jsx';
+import Photo_profile from '@/assets/images/Photo_profile.png';
 
 export default function Header() {
   return (
     <header className="header">
-      <nav className="header__nav">
-        <h1 className="header__logo">Mon Portfolio</h1>
-        <img src={Photo_profile} alt="Photo de profile Guillaume LOUAIL" className="photo-profile-header" />
-        <ul className="header__menu">
-          <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
-              Accueil
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Parcours" className={({ isActive }) => isActive ? 'active' : ''}>
-              Parcours
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/CV" className={({ isActive }) => isActive ? 'active' : ''}>
-              CV
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+      <div className="header__container">
+        {/* Logo gauche */}
+        <h1 className="header__logo">Guillaume LOUAIL</h1>
+
+        {/* Bloc photo + réseaux */}
+        <div className="header__profile">
+          <a
+            href="https://github.com/Loukys"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__icon"
+          >
+            <FaGithub />
+          </a>
+
+          <img
+            src={Photo_profile}
+            alt="Photo de profil Guillaume LOUAIL"
+            className="header__photo"
+          />
+
+          <a
+            href="https://www.linkedin.com/in/guillaume-louail-01537a109/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__icon"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+
+        {/* Menu */}
+        <Nav />
+      </div>
     </header>
   );
 }
