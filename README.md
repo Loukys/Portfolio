@@ -1,16 +1,33 @@
-# React + Vite
+# Portfolio – Guillaume Louail
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur mon portfolio développé avec **React** et **Sass**.  
+Ce site présente mon parcours, mes compétences et mes projets afin de donner une vue d’ensemble de mon profil de développeur web et Ingénieur Management, Qualité, Sécurité et Environnement.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fonctionnalités
 
-## React Compiler
+- Navigation claire et responsive (React Router)  
+- Présentation de mes compétences par catégories (frontend, backend, autres)  
+- Ligne du temps pour mon parcours (formations & expériences)  
+- Section projets avec cartes et lien vers GitHub  
+- Page CV : affichage, téléchargement, impression, envoi par mail  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (Vite, React Router)  
+- **Sass / SCSS** (variables, mixins, BEM)  
+- **React Icons**  
+- **HTML5 / CSS3 modernes**
+
+---
+
+## 📂 Installation
+
+```bash
+git clone https://github.com/Loukys/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
