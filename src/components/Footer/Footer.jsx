@@ -15,9 +15,9 @@ export default function Footer() {
 
         {/* Liens internes */}
         <ul className="footer__links">
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/Parcours">Parcours</Link></li>
-          <li><Link to="/CV">CV</Link></li>
+          <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >Accueil</Link></li>
+          <li><Link to="/Parcours" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >Parcours</Link></li>
+          <li><Link to="/CV" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >CV</Link></li>
         </ul>
 
         {/* Réseaux sociaux */}
