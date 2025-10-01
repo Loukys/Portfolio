@@ -10,7 +10,7 @@ export default function Header() {
         {/* Logo gauche */}
         <h1 className="header__logo">Guillaume LOUAIL</h1>
 
-        {/* Bloc photo + réseaux */}
+        {/* Bloc photo + réseaux centré */}
         <div className="header__profile">
           <a
             href="https://github.com/Loukys"
@@ -37,7 +37,7 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Menu */}
+        {/* Menu à droite */}
         <Nav />
       </div>
     </header>
