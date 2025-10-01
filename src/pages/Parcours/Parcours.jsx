@@ -1,88 +1,106 @@
 import './Parcours.scss';
 
-// NOTE : ordre = du plus récent (en haut) au plus ancien (en bas)
+// Import les images depuis le dossier src/assets/imgParcours
+import FormationDev from '@/assets/imgParcours/Formation_Developpeur_Web_OpenClassroom.png';
+import Coordinateur from '@/assets/imgParcours/Coordinateur_Amélioration_des_Procédés.png';
+import AdjointQualite from '@/assets/imgParcours/Adjoint_Responsable_Qualité.png';
+import Preventeur from '@/assets/imgParcours/Préventeur_Hygiène_Sécurité.png';
+import AssistantQualite from '@/assets/imgParcours/Assistant_Qualité.png';
+import AssistantQHSE from '@/assets/imgParcours/Assistant_QHSE.png';
+import FormationAnglais from '@/assets/imgParcours/Formation_Anglais.png';
+import MasterMQSE from '@/assets/imgParcours/Master_MQSE.png';
+import LicenceQSE from '@/assets/imgParcours/Licence_QSE.png';
+import BTSQIAB from '@/assets/imgParcours/BTS_QIAB.png';
+import BacSTL from '@/assets/imgParcours/Bac_STL.png';
+
+// Ordre du plus récent (en haut) au plus ancien (en bas)
 const ITEMS = [
-  // — FORMATION DEV
   {
     type: 'formation',
     period: '05/2025 → 10/2025',
     title: 'Développeur Web',
     org: 'OpenClassrooms',
-    image: '/imgParcours/Formation_Developpeur_Web_OpenClassroom.png',
+    image: FormationDev,
+    alt: 'Formation Développeur Web suivie chez OpenClassrooms en 2025',
   },
-
-  // — EXPÉRIENCES
   {
     type: 'experience',
     period: '03/2024 → 08/2024',
     title: 'Coordinateur Amélioration des Procédés (CDI)',
     org: 'Laboratoires Prodène Klint – GOJO',
-    image: '/imgParcours/Coordinateur_Amélioration_des_Procédés.png',
+    image: Coordinateur,
+    alt: 'Coordinateur amélioration des procédés chez Laboratoires Prodène Klint – GOJO en 2024',
   },
   {
     type: 'experience',
     period: '10/2020 → 02/2024',
     title: 'Adjoint Responsable Qualité (CDI)',
     org: 'Laboratoires Prodène Klint – GOJO',
-    image: '/imgParcours/Adjoint_Responsable_Qualité.png',
+    image: AdjointQualite,
+    alt: 'Adjoint Responsable Qualité chez Laboratoires Prodène Klint – GOJO entre 2020 et 2024',
   },
   {
     type: 'experience',
     period: '07/2020 → 09/2020',
     title: 'Préventeur Hygiène & Sécurité (CDD)',
     org: 'COORDEF',
-    image: '/imgParcours/Préventeur_Hygiène_Sécurité.png',
+    image: Preventeur,
+    alt: 'Préventeur Hygiène et Sécurité chez COORDEF en 2020',
   },
   {
     type: 'experience',
     period: '10/2017 → 10/2019',
     title: 'Assistant Qualité (CDI)',
-    org: 'COOKIE CREATIONS',
-    image: '/imgParcours/Assistant_Qualité.png',
-  },
-  {
-    type: 'experience',
-    period: '09/2013 → 09/2016',
-    title: 'Assistant QHSE (Alternance)',
     org: 'Compagnie Paul Prédault',
-    image: '/imgParcours/Assistant_QHSE.png',
+    image: AssistantQHSE,
+    alt: 'Assistant QHSE en alternance chez Compagnie Paul Prédault de 2013 à 2016',
   },
-
-  // — FORMATIONS académiques
   {
     type: 'formation',
     period: '2017',
     title: 'Formation Anglais',
     org: 'ESL – St Giles, Eastbourne (UK)',
-    image: '/imgParcours/Formation_Anglais.png',
+    image: FormationAnglais,
+    alt: 'Formation en anglais à l’école ESL – St Giles à Eastbourne au Royaume-Uni en 2017',
+  },
+  {
+    type: 'experience',
+    period: '09/2013 → 09/2016',
+    title: 'Assistant QHSE (Alternance)',org: 'COOKIE CREATIONS',
+    image: AssistantQualite,
+    alt: 'Assistant Qualité chez COOKIE CREATIONS de 2017 à 2019',
   },
   {
     type: 'formation',
     period: '2016',
     title: 'Master MQSE (alternance)',
     org: 'UPEM, Sens (89)',
-    image: '/imgParcours/Master_MQSE.png',
+    image: MasterMQSE,
+    alt: 'Diplôme de Master Management Qualité Sécurité Environnement obtenu à l’UPEM en alternance en 2016',
   },
   {
     type: 'formation',
     period: '2014',
     title: 'Licence QSE (apprentissage)',
     org: 'UPEM & CFA Descartes (77)',
-    image: '/imgParcours/Licence_QSE.png',
+    image: LicenceQSE,
+    alt: 'Licence Qualité Sécurité Environnement suivie en apprentissage à l’UPEM & CFA Descartes en 2014',
   },
   {
     type: 'formation',
     period: '2013',
     title: 'BTS QIAB',
     org: 'Lycée Paul Éluard (93)',
-    image: '/imgParcours/BTS_QIAB.png',
+    image: BTSQIAB,
+    alt: 'BTS Qualité dans les Industries Alimentaires et Bio-industries obtenu au Lycée Paul Éluard en 2013',
   },
   {
     type: 'formation',
     period: '2011',
     title: 'Bac STL',
     org: 'Lycée Émilie Brontë (77)',
-    image: '/imgParcours/Bac_STL.png',
+    image: BacSTL,
+    alt: 'Baccalauréat STL obtenu au Lycée Émilie Brontë en 2011',
   },
 ];
 
@@ -90,9 +108,7 @@ export default function Parcours() {
   return (
     <main className="vtl">
       <h1 className="vtl__title">Mon parcours</h1>
-      <p className="vtl__subtitle">
-        Découvrez en plus sur moi !
-      </p>
+      <p className="vtl__subtitle">Découvrez en plus sur moi !</p>
 
       <div className="vtl__line" aria-hidden="true" />
 
@@ -108,7 +124,7 @@ export default function Parcours() {
               <div className="vtl-item__card">
                 {item.image && (
                   <div className="vtl-item__media">
-                    <img src={item.image} alt="" loading="lazy" />
+                    <img src={item.image} alt={item.alt} loading="lazy" />
                   </div>
                 )}
                 <div className="vtl-item__content">

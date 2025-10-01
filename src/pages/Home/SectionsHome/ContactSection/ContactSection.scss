@@ -11,6 +11,20 @@
     gap: $spacing-sm;
   }
 
+  &__status {
+    margin-top: $spacing-sm;
+    font-size: 0.95rem;
+    &--success { color: $success; }
+    &--error   { color: $error; }
+  }
+
+  &__mailto {
+    margin-top: $spacing-xs;
+    font-size: 0.9rem;
+    color: $text-muted;
+    text-decoration: underline;
+  }
+
   label {
     display: flex;
     flex-direction: column;
