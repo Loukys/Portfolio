@@ -8,7 +8,7 @@ const ITEMS = [
     period: '05/2025 → 10/2025',
     title: 'Développeur Web',
     org: 'OpenClassrooms',
-    image: '/imgParcours/Formation_Developpeur_Web_OpenClassroom.png', // remplace quand tu veux
+    image: '/imgParcours/Formation_Developpeur_Web_OpenClassroom.png',
   },
 
   // — EXPÉRIENCES

@@ -16,8 +16,8 @@ export default function PresentationSection() {
         <img src={Photo_profile} alt="Photo de profil Guillaume LOUAIL" className="photo-profile" />
         <div>
           <p>Bonjour,</p>
-          <p>Moi c'est Guillaume,</p>
-          <p>Je suis Développeur Web junior et Ingénieur Management, Qualité, Sécurité et Environnement,</p>
+          <p>Moi c'est Guillaume !</p>
+          <p>Je suis Développeur Web junior et Ingénieur Management, Qualité, Sécurité et Environnement.</p>
           <p>Vous recherchez un développeur qui connait le monde du travail et tout particulièrement celui de l'industrie ?</p>
           <p>Alors travaillons ensemble !</p>
         </div>

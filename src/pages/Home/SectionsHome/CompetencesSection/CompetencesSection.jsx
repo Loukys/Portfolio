@@ -37,7 +37,7 @@ export default function CompetencesSection() {
     <Section
       id="competences"
       title="Mes compétences"
-      subtitle="Techniques & soft skills"
+      subtitle="TStack technique et soft skills"
     >
       <CompetenceGroup title="Frontend" skills={competencesFrontend} />
       <CompetenceGroup title="Backend" skills={competencesBackend} />
