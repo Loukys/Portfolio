@@ -13,8 +13,8 @@ export default function ProjetCard({ image, title, subtitle, children, githubLin
       <div className="ProjetCard__content">
         {children}
       </div>
-      <a href={githubLink} target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-github"></i>
+      <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="Voir le projet sur GitHub">
+        <i className="fab fa-github" aria-hidden="true"></i>
       </a>
     </div>
   );

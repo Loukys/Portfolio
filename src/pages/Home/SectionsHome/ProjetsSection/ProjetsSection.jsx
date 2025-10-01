@@ -51,7 +51,7 @@ export default function ProjetsSection() {
           image={Dev_logo} 
           githubLink="#">
           <p>
-            Site d'E-commerce en cours de développement avec une équipe de 2 développeurs.
+            Site en cours de développement avec une équipe de 2 développeurs.
           </p>
         </ProjetCard>
       </div>
