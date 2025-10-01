@@ -6,17 +6,17 @@ export default function Nav() {
     <nav className="nav">
       <ul className="nav__menu">
         <li>
-          <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo(0, 0)}>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
             Accueil
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Parcours" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo(0, 0)}>
+          <NavLink to="/Parcours" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
             Parcours
           </NavLink>
         </li>
         <li>
-          <NavLink to="/CV" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo(0, 0)}> 
+          <NavLink to="/CV" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} > 
             CV
           </NavLink>
         </li>

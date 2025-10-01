@@ -27,7 +27,7 @@ export default function ProjetsSection() {
       >
         <ProjetCard 
           title="Kasa" 
-          subtitle="React.js • Sass - 1 Developpeur" 
+          subtitle="React.js & Sass • 1 Developpeur" 
           image={Kasa_logo} 
           githubLink="https://github.com/Loukys/Projet5_Kasa">
           <p>
@@ -37,7 +37,7 @@ export default function ProjetsSection() {
     
         <ProjetCard 
           title="Mon Vieux Grimoire" 
-          subtitle="Node.js • Express - 1 Developpeur"
+          subtitle="Node.js & Express • 1 Developpeur"
           image={MVG_logo} 
           githubLink="https://github.com/Loukys/Projet6_Dev-Web-livres">
           <p>
@@ -47,11 +47,11 @@ export default function ProjetsSection() {
     
         <ProjetCard 
           title="Projet en équipe" 
-          subtitle="React.js • Node.js - 2 Developpeurs"
+          subtitle="React.js & Node.js • 2 Developpeurs"
           image={Dev_logo} 
           githubLink="#">
           <p>
-            Site d'E-commerce en cours de développement.
+            Site d'E-commerce en cours de développement avec une équipe de 2 développeurs.
           </p>
         </ProjetCard>
       </div>

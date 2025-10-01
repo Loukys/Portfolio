@@ -6,13 +6,15 @@
   justify-content: center;
   align-items: center;
   gap: 150px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
 }
 
 .parcours-card {
   @include card-style;
   width: 180px;
   height: 180px;
-  border-radius: 50%; // rond parfait
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +34,27 @@
     color: $color-primary;
   }
 
-  text-decoration: none; // supprime le soulignement du lien
+  text-decoration: none;
+}
+
+/* --- Responsive : mobile --- */
+@media (max-width: 620px) {
+  .parcours-section__cards {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+
+  .parcours-card {
+    width: 140px;
+    height: 140px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .parcours-card {
+    width: 120px;
+    height: 120px;
+    font-size: 0.9rem;
+  }
 }
