@@ -22,6 +22,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="header__icon"
+            aria-label="Profil GitHub de Guillaume Louail"
           >
             <FaGithub />
           </a>
@@ -32,6 +33,7 @@ export default function Header() {
               src={Photo_profile}
               alt="Photo de profil Guillaume LOUAIL"
               className="header__photo"
+              aria-label="Profil de profil de Guillaume Louail"
             />
           </Link>
 
@@ -40,6 +42,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="header__icon"
+            aria-label="Profil LinkedIn de Guillaume Louail"
           >
             <FaLinkedin />
           </a>
