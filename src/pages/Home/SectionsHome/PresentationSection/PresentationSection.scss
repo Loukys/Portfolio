@@ -1,19 +1,37 @@
 @import '@/styles/variables';
 @import '@/styles/mixins';
 
-// Ajustement du style pour la section Présentation
+// Section Présentation
 .home {
   &_presentation {
     @include flex-center;
+    flex-wrap: wrap;
+    gap: $spacing-xl;
+    text-align: left;
+  }
+
+  &_texte {
+    font-size: clamp($font-size-base, 2vw, $font-size-large);
+    max-width: 700px;
+    color: $text-color;
+
+    p {
+      margin-bottom: $spacing-sm;
+    }
+
+    p:first-child {
+      font-weight: 600;
+      color: $color-primary;
+    }
   }
 }
 
 .photo-profile {
-  width: 300px;
-  height: 300px;
+  width: clamp(180px, 25vw, 300px);
+  height: clamp(180px, 25vw, 300px);
   border-radius: 50%;
-  object-fit: cover;         
+  object-fit: cover;
   border: 5px solid $color-primary;
   display: block;
-  margin: 0 auto;            
+  margin: 0 auto;
 }

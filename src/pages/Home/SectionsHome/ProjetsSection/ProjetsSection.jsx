@@ -46,7 +46,7 @@ export default function ProjetsSection() {
         </ProjetCard>
     
         <ProjetCard 
-          title="Projet C" 
+          title="Projet en équipe" 
           subtitle="React.js • Node.js - 2 Developpeurs"
           image={Dev_logo} 
           githubLink="#">

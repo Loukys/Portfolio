@@ -14,7 +14,7 @@ export default function PresentationSection() {
     >
       <div className="home_presentation">
         <img src={Photo_profile} alt="Photo de profil Guillaume LOUAIL" className="photo-profile" />
-        <div>
+        <div className="home_texte">
           <p>Bonjour,</p>
           <p>Moi c'est Guillaume !</p>
           <p>Je suis Développeur Web junior et Ingénieur Management, Qualité, Sécurité et Environnement.</p>
