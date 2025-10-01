@@ -66,44 +66,38 @@ export default function ContactSection() {
             onChange={() => {}}
           />
 
-          <label htmlFor="name">
-            Nom
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Votre nom"
-              required
-              value={form.name}
-              onChange={handleChange}
-            />
-          </label>
+          <label htmlFor="name">Nom</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Votre nom"
+            required
+            value={form.name}
+            onChange={handleChange}
+          />
 
-          <label htmlFor="email">
-            Email
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="vous@exemple.com"
-              required
-              value={form.email}
-              onChange={handleChange}
-            />
-          </label>
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="vous@exemple.com"
+            required
+            value={form.email}
+            onChange={handleChange}
+          />
 
-          <label htmlFor="message">
-            Message
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Votre message…"
-              required
-              value={form.message}
-              onChange={handleChange}
-            />
-          </label>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Votre message…"
+            required
+            value={form.message}
+            onChange={handleChange}
+          />
 
           <button className="btn-primary" type="submit" disabled={sending}>
             {sending ? 'Envoi…' : 'Envoyer'}
