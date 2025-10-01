@@ -37,7 +37,7 @@ export default function ContactSection() {
         { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
       );
 
-      // Succès → vider les champs
+      // Vide le champs en cas de succès
       setForm({ name: '', email: '', message: '' });
       setStatus({ type: 'success', text: '✅ Message envoyé, merci !' });
     } catch (err) {
