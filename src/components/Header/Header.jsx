@@ -9,9 +9,11 @@ export default function Header() {
     <header className="header">
       <div className="header__container">
         {/* Logo gauche → clique = retour accueil */}
-        <Link to="/" className="header__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
-          Guillaume LOUAIL
-        </Link>
+        <h1 className="header__logo">
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
+            Guillaume LOUAIL
+          </Link>
+        </h1>
 
         {/* Bloc photo + réseaux */}
         <div className="header__profile">
