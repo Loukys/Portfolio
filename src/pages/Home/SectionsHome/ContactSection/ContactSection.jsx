@@ -67,9 +67,10 @@ export default function ContactSection() {
             onChange={() => {}}
           />
 
-          <label>
+          <label htmlFor="name">
             Nom
             <input
+              id="name"
               type="text"
               name="name"
               placeholder="Votre nom"
@@ -82,6 +83,7 @@ export default function ContactSection() {
           <label>
             Email
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="vous@exemple.com"
@@ -94,6 +96,7 @@ export default function ContactSection() {
           <label>
             Message
             <textarea
+              id="message"
               name="message"
               rows="5"
               placeholder="Votre message…"
