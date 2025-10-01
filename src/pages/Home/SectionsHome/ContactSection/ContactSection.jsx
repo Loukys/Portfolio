@@ -57,7 +57,6 @@ export default function ContactSection() {
     <Section id="contact" title="Me contacter" subtitle="Discutons de vos besoins">
       <form className="contact-form card" onSubmit={handleSubmit} noValidate>
         <div className="contact-form__fields">
-          {/* Honeypot anti-spam (caché) */}
           <input
             type="text"
             name="company"
@@ -80,7 +79,7 @@ export default function ContactSection() {
             />
           </label>
 
-          <label>
+          <label htmlFor="email">
             Email
             <input
               id="email"
@@ -93,7 +92,7 @@ export default function ContactSection() {
             />
           </label>
 
-          <label>
+          <label htmlFor="message">
             Message
             <textarea
               id="message"
