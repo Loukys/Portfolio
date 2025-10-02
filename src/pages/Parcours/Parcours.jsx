@@ -1,17 +1,17 @@
 import './Parcours.scss';
 
 // Import les images depuis le dossier src/assets/imgParcours
-import FormationDev from '@/assets/imgParcours/Formation_Developpeur_Web_OpenClassroom.png';
-import Coordinateur from '@/assets/imgParcours/Coordinateur_Amélioration_des_Procédés.png';
-import AdjointQualite from '@/assets/imgParcours/Adjoint_Responsable_Qualité.png';
-import Preventeur from '@/assets/imgParcours/Préventeur_Hygiène_Sécurité.png';
-import AssistantQualite from '@/assets/imgParcours/Assistant_Qualité.png';
-import AssistantQHSE from '@/assets/imgParcours/Assistant_QHSE.png';
-import FormationAnglais from '@/assets/imgParcours/Formation_Anglais.png';
-import MasterMQSE from '@/assets/imgParcours/Master_MQSE.png';
-import LicenceQSE from '@/assets/imgParcours/Licence_QSE.png';
-import BTSQIAB from '@/assets/imgParcours/BTS_QIAB.png';
-import BacSTL from '@/assets/imgParcours/Bac_STL.png';
+import FormationDev from '@/assets/imgParcours/Formation_Developpeur_Web_OpenClassroom.webp';
+import Coordinateur from '@/assets/imgParcours/Coordinateur_Amélioration_des_Procédés.webp';
+import AdjointQualite from '@/assets/imgParcours/Adjoint_Responsable_Qualité.webp';
+import Preventeur from '@/assets/imgParcours/Préventeur_Hygiène_Sécurité.webp';
+import AssistantQualite from '@/assets/imgParcours/Assistant_Qualité.webp';
+import AssistantQHSE from '@/assets/imgParcours/Assistant_QHSE.webp';
+import FormationAnglais from '@/assets/imgParcours/Formation_Anglais.webp';
+import MasterMQSE from '@/assets/imgParcours/Master_MQSE.webp';
+import LicenceQSE from '@/assets/imgParcours/Licence_QSE.webp';
+import BTSQIAB from '@/assets/imgParcours/BTS_QIAB.webp';
+import BacSTL from '@/assets/imgParcours/Bac_STL.webp';
 
 // Ordre du plus récent (en haut) au plus ancien (en bas)
 const ITEMS = [

@@ -2,7 +2,7 @@ import './PresentationSection.scss';
 
 import Section from '@/components/Section/Section.jsx';
 
-import Photo_profile from '@/assets/images/Photo_profile.png';
+import Photo_profile from '@/assets/images/Photo_profile.webp';
 
 // 1. Présentation 
 export default function PresentationSection() {

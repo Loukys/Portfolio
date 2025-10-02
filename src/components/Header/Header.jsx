@@ -2,7 +2,7 @@ import './Header.scss';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Nav from '@/components/Nav/Nav.jsx';
-import Photo_profile from '@/assets/images/Photo_profile.png';
+import Photo_profile from '@/assets/images/Photo_profile.webp';
 
 export default function Header() {
   return (

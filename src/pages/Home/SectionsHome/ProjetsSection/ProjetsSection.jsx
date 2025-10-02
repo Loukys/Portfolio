@@ -3,9 +3,9 @@ import './ProjetsSection.scss';
 import Section from '@/components/Section/Section.jsx';
 import ProjetCard from '@/components/ProjetCard/ProjetCard.jsx';
 
-import Kasa_logo from '@/assets/images/Kasa_logo.png';
-import MVG_logo from '@/assets/images/MVG_logo.png';
-import Dev_logo from '@/assets/images/Dev_logo.png';
+import Kasa_logo from '@/assets/images/Kasa_logo.webp';
+import MVG_logo from '@/assets/images/MVG_logo.webp';
+import Dev_logo from '@/assets/images/Dev_logo.webp';
 
 
 // 2. Mes Projets
