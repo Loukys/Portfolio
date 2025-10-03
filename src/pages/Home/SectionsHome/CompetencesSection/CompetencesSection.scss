@@ -15,15 +15,3 @@
     font-weight: 500;
   }
 }
-
-.competences-grid {
-  margin-bottom: $spacing-lg;
-  display: grid;
-  gap: $spacing-sm;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  h3 {
-    grid-column: 1 / -1; // le titre prend toute la ligne
-    margin-bottom: $spacing-sm;
-  }
-}

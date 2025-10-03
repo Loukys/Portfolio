@@ -2,6 +2,7 @@ import './ParcoursSection.scss';
 import Section from '@/components/Section/Section.jsx';
 import { Link } from 'react-router-dom';
 
+// 4. Mon Parcours
 export default function ParcoursSection() {
   return (
     <Section

@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 import './ContactSection.scss';
 import Section from '@/components/Section/Section.jsx';
 
+
+// 5. Me Contacter
 export default function ContactSection() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState({ type: '', text: '' });
