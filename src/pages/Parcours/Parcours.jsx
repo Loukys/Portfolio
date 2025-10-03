@@ -107,7 +107,7 @@ const ITEMS = [
 
 export default function Parcours() {
   return (
-    <main className="vtl">
+    <div className="vtl">
       <h2 className="vtl__title">Mon parcours</h2>
       <p className="vtl__subtitle">Découvrez en plus sur moi !</p>
 
@@ -143,6 +143,6 @@ export default function Parcours() {
           );
         })}
       </section>
-    </main>
+    </div>
   );
 }

@@ -22,13 +22,17 @@
   }
 
   &__logo {
-  font-family: $font-title;
-  font-size: $font-size-h3;
-  font-weight: 700;
-  color: $color-primary;
-  margin: 0;
-  text-decoration: none;
-  white-space: nowrap;
+    font-family: $font-title;
+    font-weight: 700;
+    color: $color-primary;
+    margin: 0;
+    text-decoration: none;
+
+    /* Taille responsive : */
+    font-size: clamp(1rem, 1rem + 1.2vw, 1.7rem);
+
+    /* Par défaut, reste sur une ligne (casse seulement en petit écran) */
+    white-space: nowrap;
   }
 
   &__profile {
@@ -61,18 +65,29 @@
     }
   }
 
-  @media (max-width: 620px) {
-    .header {
-      &__logo {
+  /* Sous 650px : autorise le retour à la ligne du H1 et réduit le padding */
+  @media (max-width: 650px) {
+    &__logo {
       white-space: normal;
       word-break: break-word;
-      max-width: 140px;
-      text-align: center; 
-      }
+      max-width: 160px;
+      text-align: left;
+      margin-left: $spacing-sm;
+    }
 
-      &__container {
-        padding: $spacing-sm 0;
-      }
+    &__container {
+      padding: $spacing-sm 0;
+    }
+  }
+
+  /* Sous 450px : masque la photo du header */
+  @media (max-width: 450px) {
+    &__photo {
+      display: none;
+    }
+
+    &__profile {
+      gap : 5px
     }
   }
 }

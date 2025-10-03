@@ -34,7 +34,6 @@ export default function Header() {
               src={Photo_profile}
               alt="Photo de profil Guillaume LOUAIL"
               className="header__photo"
-              aria-label="Profil de profil de Guillaume Louail"
             />
           </Link>
 

@@ -21,8 +21,8 @@
   }
 }
 
-/* --- Version mobile : menu vertical --- */
-@media (max-width: 620px) {
+/* Version mobile : menu vertical */
+@media (max-width: 650px) {
   .nav__menu {
     flex-direction: column;
     gap: $spacing-xs; 
