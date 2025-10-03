@@ -108,7 +108,7 @@ const ITEMS = [
 export default function Parcours() {
   return (
     <main className="vtl">
-      <h1 className="vtl__title">Mon parcours</h1>
+      <h2 className="vtl__title">Mon parcours</h2>
       <p className="vtl__subtitle">Découvrez en plus sur moi !</p>
 
       <div className="vtl__line" aria-hidden="true" />

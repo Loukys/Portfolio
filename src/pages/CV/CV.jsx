@@ -13,7 +13,7 @@ export default function CV() {
 
   return (
     <div className="cv-page">
-      <h1 className="cv-page__title">Mon CV</h1>
+      <h2 className="cv-page__title">Mon CV</h2>
 
       <div className="cv-page__viewer">
         <iframe src={MonCV} title="CV Guillaume Louail" />
