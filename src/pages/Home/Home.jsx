@@ -7,7 +7,7 @@ import ParcoursSection from './SectionsHome/ParcoursSection/ParcoursSection.jsx'
 import ContactSection from './SectionsHome/ContactSection/ContactSection.jsx';
 
 
-// Fonction d'importation des sections de la page d'accueil
+// Page : importation des sections pour la page principale
 export default function Home() {
   return (
     <div>

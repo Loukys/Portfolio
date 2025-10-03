@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './Nav.scss';
 
+// Composant : barre de navigation principale
 export default function Nav() {
   return (
     <nav className="nav">

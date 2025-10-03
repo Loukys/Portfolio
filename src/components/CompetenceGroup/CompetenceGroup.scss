@@ -8,7 +8,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   h3 {
-    grid-column: 1 / -1; // le titre prend toute la ligne
+    grid-column: 1 / -1;
     margin-bottom: $spacing-sm;
   }
 }

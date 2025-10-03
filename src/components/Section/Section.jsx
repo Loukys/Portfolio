@@ -1,5 +1,6 @@
 import './Section.scss';
 
+// Composant : section avec titre, sous-titre et contenu
 export default function Section({
   id,
   title,

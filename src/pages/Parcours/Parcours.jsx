@@ -13,6 +13,7 @@ import LicenceQSE from '@/assets/imgParcours/Licence_QSE.webp';
 import BTSQIAB from '@/assets/imgParcours/BTS_QIAB.webp';
 import BacSTL from '@/assets/imgParcours/Bac_STL.webp';
 
+// Page : affiche le parcours sous forme de timeline
 // Ordre du plus récent (en haut) au plus ancien (en bas)
 const ITEMS = [
   {

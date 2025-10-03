@@ -5,7 +5,7 @@ import Parcours from './pages/Parcours/Parcours.jsx';
 import CV from './pages/CV/CV.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 
-
+// Composant : gère les routes de l'application
 export default function Router() {
   return (
     <Routes>

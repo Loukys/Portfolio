@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Nav from '@/components/Nav/Nav.jsx';
 import Photo_profile from '@/assets/images/Photo_profile.webp';
 
+// Composant : en-tête de la page (logo, photo, réseaux, menu)
 export default function Header() {
   return (
     <header className="header">

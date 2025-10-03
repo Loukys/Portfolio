@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+// Composant : remonte en haut de la page à chaque changement de route
 export default function ScrollToTop() {
   const { pathname } = useLocation();
 

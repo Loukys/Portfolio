@@ -1,6 +1,7 @@
 import './CV.scss';
 import MonCV from '@/assets/cv/mon-cv.pdf';
 
+// Page : affiche le CV avec options de téléchargement, impression et envoi par mail
 export default function CV() {
   const handlePrint = () => {
     window.print();

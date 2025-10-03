@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Footer.scss';
 
+// Composant : pied de page avec liens et réseaux sociaux
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
